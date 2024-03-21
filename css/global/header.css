@@ -1,6 +1,5 @@
 /* ------------header----------- */
 .header-bg {
-  position: relative;
   background-color: var(--cor-p3);
 }
 
@@ -14,8 +13,8 @@
   padding-bottom: 20px;
 }
 
-.header img {
-  margin-left: 10px;
+.header-logo {
+  width: 50%;
 }
 
 .header-menu {
@@ -27,6 +26,7 @@
 .header-menu a {
   display: inline-block;
   padding: 16px 0px;
+  position: relative;
 }
 
 .header-menu a:after {

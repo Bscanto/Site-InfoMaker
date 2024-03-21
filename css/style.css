@@ -1,14 +1,18 @@
+/* cores tipografias e resets */
 @import "./global/global.css";
 @import "./utilidades/tipografia.css";
 @import "./utilidades/cores.css";
 
+/* header e footer */
 @import "./global/footer.css";
 @import "./global/header.css";
 
+/* utilitarios */
 @import "./utilidades/componentes.css";
 
+/* pagina principal */
 @import "./home/banner.css";
-@import "./sobre.css";
-@import "./projetos.css";
-@import "./professores.css";
-@import "./oficinas.css";
+@import "./home/sobre.css";
+@import "./home/projetos.css";
+@import "./home/professores.css";
+@import "./home/oficinas.css";

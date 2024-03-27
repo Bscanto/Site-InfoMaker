@@ -19,6 +19,10 @@
   gap: 40px;
 }
 
+.conteudo img {
+  align-self: center;
+}
+
 .paragrafos dl > div {
   padding: 20px;
   border-radius: 4px;
@@ -66,7 +70,7 @@
   display: none;
 }
 
-.paragrafos dd {
+.paragrafos dd.ativa {
   display: block;
 }
 

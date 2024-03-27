@@ -1,5 +1,5 @@
 // paragrafos
-
+onload= function(){
 const paragrafos = document.querySelectorAll(".paragrafos button");
 
 function ativaParagrafo(event) {
@@ -10,6 +10,7 @@ function ativaParagrafo(event) {
   resposta.classList.toggle("ativa");
   const ativa = resposta.classList.contains("ativa");
   paragrafo.setAttribute("aria-expanded", ativa);
+
 }
 
 function eventosParagrafos(paragrafo) {
@@ -17,4 +18,6 @@ function eventosParagrafos(paragrafo) {
 }
 
 paragrafos.forEach(eventosParagrafos);
+}
+
 //-------------------------------------------------------------------//

@@ -6,6 +6,7 @@
 .projetos {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
 }
 
 
@@ -24,17 +25,7 @@
 }
 
 .card:hover {
-  content: "";
-  width: 104%;
-  height: 102%;
-  border-radius: 8px;
-  background-image: linear-gradient(
-    var(--rotate),#5abe6d, #124e1d 43%, var(#00c2a8));
-    position: absolute;
-    z-index: -1%;
-    top: -1%;
-    left: -2%;
-    animation: spin 2.5s linear infinite;
+ border: var(--cor-p2);
 }
 
 .card img {
@@ -53,4 +44,17 @@
 
 .card a {
   margin-bottom: 20px;
+}
+
+@media (max-width: 1000px) {
+  .projetos {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .projetos {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 }

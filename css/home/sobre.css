@@ -81,6 +81,9 @@
 }
 
 @media (max-width: 800px) {
+  .conteudo {
+    grid-template-columns: 1fr;
+  }
   .paragrafos {
     padding-top: 60px;
     padding-bottom: 60px;

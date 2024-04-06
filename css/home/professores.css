@@ -1,0 +1,63 @@
+.professores-container {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+
+.professores {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cor-p4);
+  width: 350px;
+  height: 500px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.professores h1 {
+  margin-top: 30px;
+}
+
+.professores h2 {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.foto-professor {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.contato-redes {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.contato-redes img {
+  width: 50px;
+  height: 50px;
+}
+
+.contato-redes a {
+  padding: 10px;
+  border-radius: 4px;
+  
+}
+
+.contato-redes a:hover {
+  background-color: var(--cor-p6);
+}
+
+@media (max-width: 800px) {
+  .professores-bg {
+    grid-template-columns: 1fr;
+  }
+

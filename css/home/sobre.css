@@ -1,7 +1,7 @@
 .mensagem {
   max-width: 1200px;
   margin: auto; 
-  width: 60%; 
+  width: 80%; 
   border-left: 5px solid var(--cor-5); 
   padding: 10px;
   margin-bottom: 80px;

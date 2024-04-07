@@ -9,3 +9,23 @@
   width: 1200px;
   height: 800px;
 }
+
+@media (max-width: 1200px) {
+  .oficinas {
+    background-position: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .oficinas img{
+    height: 500px;
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  .oficinas img{
+    height: 300px;
+    width: 60%;
+  }
+}

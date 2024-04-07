@@ -1,6 +1,12 @@
-#contato{
-  background: linear-gradient(var(--cor-11) 600px, var(--cor-1));
+.contato-container {
+background: var(--cor-p4);
 }
+
+.titulo {
+  padding-left: 50px;
+  margin-top: 50px;
+}
+
 .contato {
   display: grid;
   grid-template-columns: 5fr 7fr;
@@ -9,17 +15,14 @@
 .contato-dados, 
 .contato-formulario {
   padding: 60PX;
-  box-shadow: 0 1PX 2PX rgba(0, 0, 0, 0.1);
 }
 
 .contato-dados {
   border-radius: 5px 0 0 5px;
-  background: var(--cor-12);
 }
 
 .contato-formulario {
   border-radius: 0 5px 5px 0;
-  background: var(--cor-0);
 }
 
 .contato-dados h2 {
@@ -29,7 +32,7 @@
 .contato-endereco {
   margin-bottom: 32px;
   padding-left: 28px;
-  background: url("../../img/icones/local.svg") no-repeat;
+  background: url("./img/icones/icon/local.svg") no-repeat;
 }
 
 .contato-endereco p {
@@ -47,7 +50,7 @@
 }
 
 .contato-meios a:first-child {
-  background: url("../../img/icones/email.svg") no-repeat 0px 2px;
+  background: url("../../img/icones/icon/email.svg") no-repeat 0px 2px;
 }
 
 .contato-meios a:nth-child(2){
@@ -55,7 +58,7 @@
 }
 
 .contato-meios a:nth-child(3) {
-  background: url("../../img/icones/telefone.svg") no-repeat 0px 2px;
+  background: url("") no-repeat 0px 2px;
   margin-bottom: 60px;
 }
 

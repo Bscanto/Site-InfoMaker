@@ -1,8 +1,9 @@
 .professores-container {
   max-width: 1200px;
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
+  gap: 100px;
 }
 
 .professores {
@@ -57,7 +58,11 @@
 }
 
 @media (max-width: 800px) {
-  .professores-bg {
+  .professores-container {
     grid-template-columns: 1fr;
+    align-self: center;
+    padding: 100px;
   }
 
+  
+}

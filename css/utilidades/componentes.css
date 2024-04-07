@@ -26,6 +26,7 @@
   color: var(--cor-p7);
   font: 600 1.125rem/1.35 "Poppins", sans-serif;
   max-width: max-content;
+  border: none;
 }
 
 .botao:hover {
@@ -64,7 +65,7 @@
   max-width: 1200px;
   height: 82px;
   border-radius: 8px;
-  background-color: #f0f0f0;
+  background-color: var(--cor-4);
   margin: auto;
   margin-top: 60px;
   margin-bottom: 60px;

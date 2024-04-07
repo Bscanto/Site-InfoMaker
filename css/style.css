@@ -16,4 +16,5 @@
 @import "./home/projetos.css";
 @import "./home/professores.css";
 @import "./home/oficinas.css";
-@import "./home/contato.css";
+@import "./home/contato/contato.css";
+@import "./home/contato/formulario.css";

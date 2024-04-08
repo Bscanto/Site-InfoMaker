@@ -9,6 +9,61 @@
   width: 1200px;
   height: 800px;
 }
+/*   SLIDE */
+
+*{
+  box-sizing: border-box;
+}
+.oficina{
+  overflow: hidden;
+  font-family: 'Roboto Mono', monospace;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containe{
+  width: 100%;
+  display: flex;
+  padding: 0 20px;
+}
+
+.slide{
+  height: 80vh;
+  border-radius: 20px;
+  margin: 10px;
+  cursor: pointer;
+  color: #FFF;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  transition: all 5222ms ease-in-out;
+}
+
+.slide h3{
+  position: absolute;
+  font-size: 24px;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
+.slide.active{
+  flex:5;
+}
+
+.slide.active h3 {
+  opacity: 1;
+  transition:opacity 0.9s ease-in 0.4s;
+}
+
+
+
 
 @media (max-width: 1200px) {
   .oficinas {

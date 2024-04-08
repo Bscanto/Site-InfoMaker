@@ -1,3 +1,42 @@
+.slider {
+  position: relative;
+  margin: 0 auto;
+  width: 400px;
+  height: 600px;
+ }
+ #slids {
+  overflow: hidden;
+ }
+ #slids .professores {
+  position: absolute;
+ }
+ 
+ .prev,
+ .next {
+  display:block;
+  position: absolute;
+  top: 35%;
+  cursor: pointer;
+  color: #000;
+  font-size: 48px;
+  padding: 5px;
+  width: 30px;
+  height: 50px
+ }
+ .prev {
+  left: -34px;
+ }
+ .next {
+  right: -36px;
+ }
+
+
+
+
+
+
+
+
 .professores-container {
   max-width: 1200px;
   display: grid;

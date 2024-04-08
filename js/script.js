@@ -49,20 +49,7 @@ jQuery(document).ready(function(){
 
 //------------------------------------------------//
 //Slides Oficinas
-const slids = document.querySelectorAll(".slide");
 
-for (const slide of slids) {
-  slide.addEventListener("click", () => {
-    clearActive();
-    slide.classList.add("active");
-  });
-}
-
-function clearActive() {
-  slids.forEach((slide) => {
-    slide.classList.remove("active");
-  });
-}
 
 
 //-----------------------------------------------//

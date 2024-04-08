@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box;
+}
+
 .oficinas {
   display: flex;
   flex-direction: column;
@@ -11,56 +15,90 @@
 }
 /*   SLIDE */
 
-*{
-  box-sizing: border-box;
-}
-.oficina{
-  overflow: hidden;
-  font-family: 'Roboto Mono', monospace;
-  margin: 0;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.containe{
+.cont {
   width: 100%;
   display: flex;
-  padding: 0 20px;
+  justify-content: center;
+  height: 600px;
+  gap: 10px;
+
+  > div {
+    flex: 0 0 120px;
+    border-radius: 0.5rem;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    box-shadow: 1px 5px 15px var(--cor-p7);
+    position: relative;
+    overflow: hidden;
+
+    &:nth-of-type(1) {
+      background: url("../../img/dia-a-dia/24mai2021_RoboticaNasEscolas_pexels-alena-darmel.webp")
+        no-repeat 80% / cover;
+    }
+    &:nth-of-type(2) {
+      background: url("../../img/dia-a-dia/aprendizes-digital-4.webp")
+        no-repeat 80% / cover;
+    }
+    &:nth-of-type(3) {
+      background: url("../../img/dia-a-dia/ARDUINO.webp")
+        no-repeat 80% / cover;
+    }
+    &:nth-of-type(4) {
+      background: url("../../img/dia-a-dia/equipederobticadosesiminas.webp")
+        no-repeat 80% / cover;
+    }
+    &:nth-of-type(5) {
+      background: url("../../img/dia-a-dia/IMG_20230810_171705-1-318x219.webp")
+        no-repeat 80% / cover;
+    }
+
+    .content {
+      font-size: 1.5rem;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      opacity: 0;
+      flex-direction: column;
+      height: 100%;
+      justify-content: flex-end;
+      background: rgb(var(--cor-p1));
+      background: linear-gradient(
+        0deg,
+        rgba(var(--cor-p1), 0.6755077030812324) 0%,
+        rgba(var(--cor-p2), 0) 100%
+      );
+      transform: translatey(100%);
+      transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
+      visibility: hidden;
+
+      span {
+        display: block;
+        margin-top: 5px;
+        font-size: 1.2rem;
+      }
+    }
+
+    &:hover {
+      flex: 0 0 50%;
+      box-shadow: 1px 3px 15px var(--cor-p6);
+      transform: translatey(-30px);
+    }
+
+    &:hover .content {
+      opacity: 1;
+      transform: translatey(0%);
+      visibility: visible;
+    }
+  }
 }
 
-.slide{
-  height: 80vh;
-  border-radius: 20px;
-  margin: 10px;
-  cursor: pointer;
-  color: #FFF;
-  flex: 1;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-  transition: all 5222ms ease-in-out;
-}
 
-.slide h3{
-  position: absolute;
-  font-size: 24px;
-  bottom: 20px;
-  left: 20px;
-  margin: 0;
-  opacity: 0;
-}
 
-.slide.active{
-  flex:5;
-}
 
-.slide.active h3 {
-  opacity: 1;
-  transition:opacity 0.9s ease-in 0.4s;
-}
+
+
 
 
 
